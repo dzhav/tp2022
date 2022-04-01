@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 if (ARM_BUILD)
-	set(CMAKE_C_COMPILER ${TOOLCHAIN}/arm-linux-gnueabihf-gcc)
+	set(CMAKE_C_COMPILER ${TOOLCHAIN}/aarch64-linux-gnu-gcc)
 endif()
 
 project(SimpleLibrary)
