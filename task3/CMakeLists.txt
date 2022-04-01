@@ -19,7 +19,7 @@ add_executable(Main main.cpp)
 add_executable(MainLib main_lib.cpp)
 
 target_link_libraries(MainLib buffer)
-
+install(TARGETS buffer DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
 
 install(TARGETS Main DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
 install(TARGETS MainLib DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
