@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 if (ARM_BUILD)
-	set(CMAKE_C_COMPILER ${TOOLCHAIN}/aarch64-linux-gnu-g++)
+	set(CMAKE_CXX_COMPILER ${TOOLCHAIN}/aarch64-linux-gnu-g++)
 endif()
 
 project(SimpleLibrary)
